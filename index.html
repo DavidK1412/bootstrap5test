@@ -22,6 +22,7 @@
   </nav>
   <div class="container">
     <!-- Formulario centrado con boton de enviar, campos nombre - apellido - correo - fecha de nacimiento -->
+    <div class="row g-3">
     <form class="row g-3">
       <div class="col-md-6">
         <label for="inputName" class="form-label">Nombre</label>
@@ -39,11 +40,13 @@
         <label for="inputDate" class="form-label">Fecha de nacimiento</label>
         <input type="date" class="form-control" id="inputDate">
       </div>
-      <div class="col-12">
+
+    </form>
+    <div class="col-12">
         <button  class="btn btn-primary" data-bs-toggle="modal"
           data-bs-target="#modal-datos">Enviar</button>
       </div>
-    </form>
+    </div>
 
     <!-- Modal -->
     <div class="modal fade" id="modal-datos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
